@@ -1,0 +1,42 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Test_Scripts",
+		"_postman_id": "262056c1-5f24-60ba-4bc1-bc9128116bfe",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/posts/",
+			"request": {
+				"url": "http://localhost:3000/posts/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 19,\n        \"title\": \"Echo Test\",\n        \"author\": \"Joy\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{env-api}}/posts/",
+			"request": {
+				"url": "http://{{env-api}}/posts/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
